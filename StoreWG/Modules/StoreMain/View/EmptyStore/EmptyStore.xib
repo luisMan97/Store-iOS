@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product List Empty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRe-dS-d5d">
+                    <rect key="frame" x="111" y="384.5" width="153" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emptyList" translatesAutoresizingMaskIntoConstraints="NO" id="ss1-13-dGX">
+                    <rect key="frame" x="120.5" y="202.5" width="134" height="162"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ss1-13-dGX" secondAttribute="height" multiplier="67:81" id="5El-3A-z6n"/>
+                        <constraint firstAttribute="height" constant="162" id="hWu-M5-Mpl"/>
+                        <constraint firstAttribute="width" constant="134" id="rRU-79-coo"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add new products" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bww-Y3-1UC">
+                    <rect key="frame" x="117.5" y="415.5" width="140" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ss1-13-dGX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-50" id="2pv-OQ-3yj"/>
+                <constraint firstItem="qRe-dS-d5d" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="5xo-Uc-H5d"/>
+                <constraint firstItem="Bww-Y3-1UC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="IZp-i8-Jge"/>
+                <constraint firstItem="qRe-dS-d5d" firstAttribute="top" secondItem="ss1-13-dGX" secondAttribute="bottom" constant="20" id="Vhj-Cn-BQu"/>
+                <constraint firstItem="Bww-Y3-1UC" firstAttribute="top" secondItem="qRe-dS-d5d" secondAttribute="bottom" constant="10" id="v81-FR-nnR"/>
+                <constraint firstItem="ss1-13-dGX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="vja-9g-CT6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="emptyList" width="67" height="81"/>
+    </resources>
+</document>
